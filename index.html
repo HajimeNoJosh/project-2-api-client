@@ -12,6 +12,57 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h2 id="message"></h2>
+      <section class="createCharacterSection">
+        <h2 class='createCharacter'>Create Character</h2>
+        <form id="create-character">
+          Given Name: <input placeholder="Enter Given Name" type="text" name="character[given_name]">
+          Family Name: <input placeholder="Enter Family Name..." type="text" name="character[family_name]">
+          <button id="Create">Create</button>
+        </form>
+      </section>
+      <section class="getCharactersSection">
+        <h2 class='getCharacters'>Show all Characters</h2>
+          <button id="getCharacters">Get Characters</button>
+          <p class="allCharacters">
+      </section>
+      <section class="getOneCharacterSection">
+        <h2 class='getOneCharacter'>Get Your Character</h2>
+        <form id="get-one-character">
+          ID: <input placeholder="Enter Character ID" type="text" name="character[id]">
+          <button id="getCharacter">FETCH</button>
+        </form>
+        <p class="oneCharacter">
+      </section>
+      <section class="signInSection">
+        <h2 class='signin'>Sign In</h2>
+        <form id="sign-in">
+          Email: <input placeholder="Enter email..." type="email" name="credentials[email]">
+          Password: <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+          <button id="signIn">Sign in</button>
+        </form>
+      </section>
+      <section class="signUpSection">
+        <h2 class='signUp'>Sign Up</h2>
+        <form id="sign-up">
+          Email:   <input placeholder="Enter email..." type="email" name="credentials[email]">
+          Password:  <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+          Confirm Password:   <input placeholder="Confirm password..." type="password" name="credentials[password_confirmation]" class="password">
+          <button id="signUp">Sign up</button>
+        </form>
+      </section>
+      <section class="changePasswordSection">
+  <h2 id="changePassword">Change Password</h2>
+  <form id="change-password">
+    Old Password: <input placeholder="Enter Old Password..." type="password" name="passwords[old]]" class="password">
+    New Password: <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
+    <button id="changePassword">Change Password</button>
+  </form>
+</section>
+<section class="signOutSection">
+  <form id="sign-out">
+    <button id="signout">Sign Out</button>
+  </form>
+</section>
     </body>
 </html>
