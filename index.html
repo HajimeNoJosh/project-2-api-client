@@ -21,6 +21,15 @@
           <button id="Create">Create</button>
         </form>
       </section>
+      <section class="updateCharacterSection">
+        <h2 class='updateCharacter'>Update Character</h2>
+        <form id="update-character">
+          ID: <input placeholder="Enter Character ID" type="text" name="character[id]">
+          Given Name: <input placeholder="Enter Given Name" type="text" name="character[given_name]">
+          Family Name: <input placeholder="Enter Family Name..." type="text" name="character[family_name]">
+          <button id="update">Update</button>
+        </form>
+      </section>
       <section class="getCharactersSection">
         <h2 class='getCharacters'>Show all Characters</h2>
           <button id="getCharacters">Get Characters</button>
@@ -62,6 +71,12 @@
 <section class="signOutSection">
   <form id="sign-out">
     <button id="signout">Sign Out</button>
+  </form>
+</section>
+<section class="deleteCharacter">
+  <form id="delete-character">
+    ID: <input placeholder="Enter Character ID" type="text" name="character[id]">
+    <button id="deleteCharacter">Delete</button>
   </form>
 </section>
     </body>

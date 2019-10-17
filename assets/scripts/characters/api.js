@@ -33,8 +33,31 @@ const getCharacter = function (formData) {
   })
 }
 
+const deleteCharacter = function (formData) {
+  return $.ajax({
+    method: 'DELETE',
+    url: config.apiUrl + '/characters/' + formData.character.id,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
+const updateCharacter = function (formData) {
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/characters/' + formData.character.id,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: formData
+  })
+}
+
 module.exports = {
   createCharacter,
   getCharacters,
-  getCharacter
+  getCharacter,
+  deleteCharacter,
+  updateCharacter
 }

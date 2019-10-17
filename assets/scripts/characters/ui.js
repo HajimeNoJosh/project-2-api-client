@@ -16,6 +16,19 @@ const onCreateSuccess = function () {
   successMessage('Created Successfully!')
 }
 
+const onDeleteCharacterSuccess = function () {
+  successMessage('Deleted Successfully!')
+}
+const onDeleteCharacterFailure = function () {
+  successMessage('Deleted Unsuccessfully!')
+}
+
+const onUpdateCharacterSuccess = function () {
+  successMessage('Updated Successfully!')
+}
+const onUpdateCharacterFailure = function () {
+  successMessage('Updated Unsuccessfully!')
+}
 const onGetAllSuccess = function (data) {
   console.log(data.characters)
   $('.allCharacters').text(' ')
@@ -37,5 +50,9 @@ module.exports = {
   onCreateSuccess,
   onCreateFailure,
   onGetAllSuccess,
-  onGetOneSuccess
+  onGetOneSuccess,
+  onDeleteCharacterSuccess,
+  onDeleteCharacterFailure,
+  onUpdateCharacterSuccess,
+  onUpdateCharacterFailure
 }

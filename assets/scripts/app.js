@@ -17,4 +17,6 @@ $(() => {
   $('#create-character').on('submit', charactersEvents.onCreate)
   $('#getCharacters').on('click', charactersEvents.onGetAll)
   $('#get-one-character').on('submit', charactersEvents.onGetOne)
+  $('#delete-character').on('submit', charactersEvents.onDeleteCharacter)
+  $('#update-character').on('submit', charactersEvents.onUpdateCharacter)
 })

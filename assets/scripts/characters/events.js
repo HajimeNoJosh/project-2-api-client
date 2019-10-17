@@ -28,8 +28,31 @@ const onGetOne = function (event) {
     .then(ui.onGetOneSuccess)
     .catch(ui.onGetOneFailure)
 }
+
+const onDeleteCharacter = function (event) {
+  event.preventDefault()
+
+  const form = event.target
+  const formData = getFormFields(form)
+  api.deleteCharacter(formData)
+    .then(ui.onDeleteCharacterSuccess)
+    .catch(ui.onDeleteCharacterFailure)
+}
+
+const onUpdateCharacter = function (event) {
+  event.preventDefault()
+
+  const form = event.target
+  const formData = getFormFields(form)
+  api.updateCharacter(formData)
+    .then(ui.onUpdateCharacterSuccess)
+    .catch(ui.onUpdateCharacterFailure)
+}
+
 module.exports = {
   onCreate,
   onGetAll,
-  onGetOne
+  onGetOne,
+  onDeleteCharacter,
+  onUpdateCharacter
 }
