@@ -15,27 +15,7 @@ const signIn = function (formData) {
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/sign-in',
-    data: formData,
-    success: function () {
-      $('#sign-out').show()
-      $('#sign-in').hide()
-      $('#sign-up').hide()
-      $('.signin').hide()
-      $('.signUp').hide()
-      $('#change-password').show()
-      $('#changePassword').show()
-      $('#victory').show()
-      $('#create-character').show()
-      $('.createCharacter').show()
-      $('.updateCharacter').show()
-      $('.getCharactersSection').show()
-      $('.getOneCharacterSection').show()
-      $('#create-character').show()
-      $('#getCharacters').show()
-      $('#get-one-character').show()
-      $('#delete-character').show()
-      $('#update-character').show()
-    }
+    data: formData
   })
 }
 
@@ -56,22 +36,6 @@ const signOut = function () {
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
-    success: function () {
-      $('#change-password').hide()
-      $('#sign-in').show()
-      $('#sign-up').show()
-      $('#sign-out').hide()
-      $('#amount-games-lost').hide()
-      $('#amount-games-won').hide()
-      $('#amount-games').hide()
-      $('#changePassword').hide()
-      $('#message').show()
-      $('#victory').hide()
-      $('.createCharacter').hide()
-      $('.updateCharacter').hide()
-      $('.getCharactersSection').hide()
-      $('.getOneCharacterSection').hide()
     }
   })
 }

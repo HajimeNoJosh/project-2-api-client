@@ -28,6 +28,13 @@ const onSignInSuccess = function (responseData) {
   successMessage('Signed In Successfully!')
   store.user = responseData.user
   $('.password').val('')
+  $('#sign-in').hide()
+  $('#sign-up').hide()
+  $('.signin').hide()
+  $('.signUp').hide()
+  $('.prepareForAdventure').show()
+  $('.goOnAdventure').show()
+  $('.account').show()
 }
 
 const onSignInFailure = function () {
@@ -43,6 +50,16 @@ const onChangePasswordSuccess = function () {
 const onChangePasswordFailure = function () {
   failureMessage('Change Password Failed')
   $('.password').val('')
+}
+
+const onAccountGet = function () {
+  $('#change-password').show()
+  $('#changePassword').show()
+  $('#sign-out').show()
+  $('.prepareForAdventure').hide()
+  $('.goOnAdventure').hide()
+  $('.account').hide()
+  $('.resetState').show()
 }
 
 const signOutSuccess = function () {
@@ -68,5 +85,6 @@ module.exports = {
   onChangePasswordSuccess,
   onChangePasswordFailure,
   signOutSuccess,
-  signOutFailure
+  signOutFailure,
+  onAccountGet
 }

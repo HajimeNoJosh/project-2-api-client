@@ -18,8 +18,7 @@ const getCharacters = function () {
     url: config.apiUrl + '/characters',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
-    data: ''
+    }
   })
 }
 

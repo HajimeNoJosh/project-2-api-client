@@ -15,6 +15,16 @@
 
 <body>
   <h2 id="message"></h2>
+  <section class="continueSection">
+    <section class="getOneCharacterSection">
+      <h2 class='getOneCharacter'>Get Your Character</h2>
+      <form id="get-one-character">
+        ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+        <button id="getCharacter">FETCH</button>
+      </form>
+      <p class="oneCharacter">
+    </section>
+    <!-- <button class="continueButton"> YES </button> -->
   <section class="createCharacterSection">
     <h2 class='createCharacter'>Create Character</h2>
     <form id="create-character">
@@ -33,21 +43,14 @@
     </form>
   </section>
   <section class="getCharactersSection">
-    <h2 class='getCharacters'>Show all Characters</h2>
+    <h2 class='getCharacters'>Show All Characters</h2>
     <button id="getCharacters" class="buttons">Get Characters</button>
     <p class="allCharacters">
     <h2 id="gotCharacters">
   </section>
-  <section class="getOneCharacterSection">
-    <h2 class='getOneCharacter'>Get Your Character</h2>
-    <form id="get-one-character">
-      ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
-      <button id="getCharacter">FETCH</button>
-    </form>
-    <p class="oneCharacter">
-  </section>
   <section class="deleteCharacter">
     <form id="delete-character">
+      <h2 class='getCharacters'>Delete Character</h2>
       ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
       <button id="deleteCharacter">Delete</button>
     </form>
@@ -81,6 +84,16 @@
     <form id="sign-out">
       <button id="signout">Sign Out</button>
     </form>
+  </section>
+  <section class='buttonsSection'>
+  <button class='prepareForAdventure buttons'>Prepare For <br>Adventure</button>
+  <button class='goOnAdventure buttons'>Go On Adventure</button>
+  <button class='account buttons'>Account</button>
+  <button class="resetState buttons">Go Back!</button>
+</section>
+  <section class="textGameSection">
+    <h4 class="welcomCharacter">
+    </h3>
   </section>
 </body>
 

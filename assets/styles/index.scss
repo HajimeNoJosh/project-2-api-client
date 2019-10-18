@@ -54,12 +54,13 @@ form {
   align-items: center;
   flex-direction: column;
 }
+
 .changePasswordSection {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .signOutSection {
   display: flex;
   justify-content: center;
@@ -88,12 +89,14 @@ form {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
 .getCharactersSection{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .getOneCharacterSection {
   display: flex;
   justify-content: center;
@@ -108,40 +111,6 @@ form {
   align-items: center;
   flex-direction: column;
   margin-bottom: 15px;
-}
-.cell {
-  background-color: #0D0D0D;
-  color: #3F598C;
-  font-size: 100px;
-  height: 150px;
-  text-align: center;
-  width: 150px;
-}
-.aicell {
-  background-color: #0D0D0D;
-  color: #3F598C;
-  font-size: 100px;
-  height: 150px;
-  text-align: center;
-  width: 150px;
-}
-
-.board {
-  display: flex;
-  justify-content: center;
-}
-
-.square1 {
-  border-bottom: solid #F2F2F2 1px;
-  border-right: solid #F2F2F2 1px;
-}
-
-.square2 {
-  border-bottom: solid #F2F2F2 1px;
-}
-
-.square3 {
-  border-right: solid #F2F2F2 1px;
 }
 
 .success {
@@ -158,16 +127,13 @@ form {
   justify-content: center;
 }
 
-.move-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-.informationGame {
+
+.buttonsSection {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .buttons {
