@@ -15,42 +15,50 @@ const failureMessage = function (newText) {
 const onCreateSuccess = function () {
   successMessage('Created Successfully!')
 }
+const onCreateFailure = function () {
+  failureMessage('Created Failed')
+}
 
 const onDeleteCharacterSuccess = function () {
   successMessage('Deleted Successfully!')
 }
 const onDeleteCharacterFailure = function () {
-  successMessage('Deleted Unsuccessfully!')
+  failureMessage('Deleted Unsuccessfully!')
 }
 
 const onUpdateCharacterSuccess = function () {
   successMessage('Updated Successfully!')
 }
 const onUpdateCharacterFailure = function () {
-  successMessage('Updated Unsuccessfully!')
+  failureMessage('Updated Unsuccessfully!')
 }
+
 const onGetAllSuccess = function (data) {
-  console.log(data.characters)
   $('.allCharacters').text(' ')
   data.characters.forEach(function (character) {
     $('.allCharacters').append('<li>' + 'ID: ' + character.id + ' ' + 'Name: ' + character.full_name + '</li>')
   })
+  successMessage('Showing Characters')
+}
+const onGetAllFailure = function () {
+  failureMessage('Cannot Show Characters')
 }
 const onGetOneSuccess = function (data) {
-  console.log(data)
   $('.oneCharacter').text(' ')
   $('.oneCharacter').append('ID: ' + data.character.id + ' ' + 'Name: ' + data.character.full_name)
+  successMessage('Showing Character ' + data.character.full_name)
 }
-
-const onCreateFailure = function () {
-  failureMessage('Created Failed')
+const onGetOneFailure = function () {
+  failureMessage('Cannot Show Character')
 }
 
 module.exports = {
   onCreateSuccess,
   onCreateFailure,
   onGetAllSuccess,
+  onGetAllFailure,
   onGetOneSuccess,
+  onGetOneFailure,
   onDeleteCharacterSuccess,
   onDeleteCharacterFailure,
   onUpdateCharacterSuccess,
