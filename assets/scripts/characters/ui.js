@@ -1,5 +1,3 @@
-const api = require('./api.js')
-
 const successMessage = function (newText) {
   $('#message').text(newText).hide(2000).show().hide(2000)
   $('#message').removeClass('failure')
@@ -14,23 +12,29 @@ const failureMessage = function (newText) {
 
 const onCreateSuccess = function () {
   successMessage('Created Successfully!')
+  $('.clearText').val('')
 }
 const onCreateFailure = function () {
   failureMessage('Created Failed')
+  $('.clearText').val('')
 }
 
 const onDeleteCharacterSuccess = function () {
   successMessage('Deleted Successfully!')
+  $('.clearText').val('')
 }
 const onDeleteCharacterFailure = function () {
   failureMessage('Deleted Unsuccessfully!')
+  $('.clearText').val('')
 }
 
 const onUpdateCharacterSuccess = function () {
   successMessage('Updated Successfully!')
+  $('.clearText').val('')
 }
 const onUpdateCharacterFailure = function () {
   failureMessage('Updated Unsuccessfully!')
+  $('.clearText').val('')
 }
 
 const onGetAllSuccess = function (data) {
@@ -47,9 +51,11 @@ const onGetOneSuccess = function (data) {
   $('.oneCharacter').text(' ')
   $('.oneCharacter').append('ID: ' + data.character.id + ' ' + 'Name: ' + data.character.full_name)
   successMessage('Showing Character ' + data.character.full_name)
+  $('.clearText').val('')
 }
 const onGetOneFailure = function () {
   failureMessage('Cannot Show Character')
+  $('.clearText').val('')
 }
 
 module.exports = {
