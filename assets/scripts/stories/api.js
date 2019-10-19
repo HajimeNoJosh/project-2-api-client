@@ -2,7 +2,6 @@ const config = require('../config.js')
 const store = require('../store.js')
 
 const updateStory = function (id, currentStoryPart) {
-  console.log(id)
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/stories',

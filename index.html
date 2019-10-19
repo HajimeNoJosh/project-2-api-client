@@ -75,7 +75,7 @@
   <section class="changePasswordSection">
     <h2 id="changePassword">Change Password</h2>
     <form id="change-password">
-      Old Password: <input placeholder="Enter Old Password..." type="password" name="passwords[old]]" class="password">
+      Old Password: <input placeholder="Enter Old Password..." type="password" name="passwords[old]" class="password">
       New Password: <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
       <button id="changePassword">Change Password</button>
     </form>
@@ -93,8 +93,14 @@
 </section>
   <section class="textGameSection">
     <h4 class="welcomCharacter">
-    </h3>
+    </h4>
+    <p class='currentStoryPart'>
+    </p>
   </section>
+  <form id="storySubmission">
+   > <input placeholder="Enter answer..." type="text" name="story[choice]">
+    <button id="submitStoryChoice">Make Choice</button>
+  </form>
 </body>
 
 </html>

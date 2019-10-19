@@ -32,4 +32,5 @@ $(() => {
   $('.prepareForAdventure').on('click', charactersUi.onPreparation).hide()
   $('.goOnAdventure').on('click', charactersUi.onAdventuring).hide()
   $('.account').on('click', authUi.onAccountGet).hide()
+  $('#storySubmission').on('submit', gamelogic.changeStory).hide()
 })

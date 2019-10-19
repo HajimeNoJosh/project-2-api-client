@@ -67,6 +67,7 @@ const onGetOneSuccess = function (data) {
   $('#getCharacters').hide()
   $('.getOneCharacterSection').hide()
   $('#get-one-character').hide()
+  $('#storySubmission').show()
 }
 const onGetOneFailure = function () {
   failureMessage('Cannot Show Character')
@@ -112,6 +113,8 @@ const onResetState = function () {
   $('#change-password').hide()
   $('#changePassword').hide()
   $('#sign-out').hide()
+  $('#storySubmission').hide()
+  $('.textGameSection').hide()
 }
 
 module.exports = {
