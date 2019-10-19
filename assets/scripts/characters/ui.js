@@ -1,3 +1,5 @@
+const stories = require('../stories/api.js')
+
 const successMessage = function (newText) {
   $('#message').text(newText).hide(2000).show().hide(2000)
   $('#message').removeClass('failure')
@@ -10,9 +12,10 @@ const failureMessage = function (newText) {
   $('#message').addClass('failure')
 }
 
-const onCreateSuccess = function () {
+const onCreateSuccess = function (id) {
   successMessage('Created Successfully!')
   $('.clearText').val('')
+  stories.updateStory(id)
 }
 const onCreateFailure = function () {
   failureMessage('Created Failed')
