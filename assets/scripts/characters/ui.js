@@ -17,6 +17,7 @@ const onCreateSuccess = function (id) {
   $('.clearText').val('')
   stories.updateStory(id)
 }
+
 const onCreateFailure = function () {
   failureMessage('Created Failed')
   $('.clearText').val('')
@@ -50,6 +51,7 @@ const onGetAllSuccess = function (data) {
 const onGetAllFailure = function () {
   failureMessage('Cannot Show Characters')
 }
+
 const onGetOneSuccess = function (data) {
   $('.oneCharacter').text(' ')
   $('.welcomCharacter').text(' ')
@@ -67,7 +69,10 @@ const onGetOneSuccess = function (data) {
   $('.getOneCharacterSection').hide()
   $('#get-one-character').hide()
   $('#storySubmission').show()
+  $('.currentStoryPart').html(data.character.storyPart)
+  stories.getStory(data.character.story_id)
 }
+
 const onGetOneFailure = function () {
   failureMessage('Cannot Show Character')
   $('.clearText').val('')

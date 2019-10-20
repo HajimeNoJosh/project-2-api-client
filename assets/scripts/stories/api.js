@@ -17,6 +17,20 @@ const updateStory = function (id, currentStoryPart) {
   })
 }
 
+const getStory = function (id) {
+  return $.ajax({
+    method: 'GET',
+    url: config.apiUrl + '/stories',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: {
+
+    }
+  })
+}
+
 module.exports = {
-  updateStory
+  updateStory,
+  getStory
 }
