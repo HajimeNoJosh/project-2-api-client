@@ -15,6 +15,31 @@
 
 <body>
   <h2 id="message"></h2>
+  <section class="commandLine">
+  <h1 class="pirateAdventure"> > A PIRATE ADVENTURE </h1>
+  <h3 class="questionOne"> What would you like to do? </h3>
+  <div class="command"> SI - sign in to your account </div>
+  <div class="command"> SU - sign up for your adventure </div>
+  <form id="adventure">
+    > <input type="text" name="pirate[adventure]" class="clearText">
+    <button id="getPirateAdventure"></button>
+  </form>
+</section>
+<section class="commandLine2">
+<h1 class="pirateAdventures"> > A PIRATE ADVENTURE </h1>
+<h3 class="questionTwo"> What would you like to do? </h3>
+<div class="command"> CP - change password </div>
+<div class="command"> SO - sign out </div>
+<div class="command"> CC - create character </div>
+<div class="command"> IC - show all characters </div>
+<div class="command"> SC - show one character </div>
+<div class="command"> DC - delte character </div>
+<div class="command"> UC - update your character </div>
+<form id="adventure2">
+  > <input type="text" name="pirate[adventure]" class="clearText">
+  <button id="getPirateAdventure2"></button>
+</form>
+</section>
   <section class="continueSection">
     <section class="getOneCharacterSection">
       <h2 class='getOneCharacter'>Get Your Character</h2>
@@ -24,6 +49,7 @@
       </form>
       <p class="oneCharacter">
     </section>
+  </section>
     <!-- <button class="continueButton"> YES </button> -->
   <section class="createCharacterSection">
     <h2 class='createCharacter'>Create Character</h2>
@@ -47,6 +73,7 @@
     <button id="getCharacters" class="buttons">Get Characters</button>
     <p class="allCharacters">
     <h2 id="gotCharacters">
+    </h2>
   </section>
   <section class="deleteCharacter">
     <form id="delete-character">
@@ -90,6 +117,7 @@
   <button class='goOnAdventure buttons'>Go On Adventure</button>
   <button class='account buttons'>Account</button>
   <button class="resetState buttons">Go Back!</button>
+  <button class="resetState2 buttons">Go Back!</button>
 </section>
   <section class="textGameSection">
     <h4 class="welcomCharacter">

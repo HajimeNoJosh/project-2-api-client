@@ -57,7 +57,6 @@ const onGetOneSuccess = function (data) {
   successMessage('Showing Character ' + data.character.full_name)
   $('.clearText').val('')
   $('.textGameSection').show()
-  $('.resetState').show()
   $('.welcomCharacter').append('Welcome: ' + data.character.full_name)
   $('.prepareForAdventure').hide()
   $('.goOnAdventure').hide()
@@ -96,25 +95,33 @@ const onAdventuring = function () {
   $('.account').hide()
 }
 const onResetState = function () {
-  $('.prepareForAdventure').show()
-  $('.goOnAdventure').show()
-  $('.account').show()
   $('.resetState').hide()
-  $('#create-character').hide()
-  $('.createCharacter').hide()
-  $('.updateCharacter').hide()
-  $('#delete-character').hide()
-  $('#update-character').hide()
-  $('.getCharactersSection').hide()
-  $('.getOneCharacterSection').hide()
-  $('#getCharacters').hide()
-  $('#get-one-character').hide()
-  $('.welcomCharacter').text('')
+  $('.signUp').hide()
+  $('#sign-up').hide()
+  $('.commandLine').show()
+  $('#sign-in').hide()
+  $('.signin').hide()
+}
+const onResetState2 = function () {
+  $('.resetState2').hide()
+  $('.commandLine2').show()
   $('#change-password').hide()
   $('#changePassword').hide()
   $('#sign-out').hide()
-  $('#storySubmission').hide()
+  $('#create-character').hide()
+  $('.createCharacter').hide()
+  $('#getCharacters').hide()
+  $('.getCharactersSection').hide()
+  $('#get-one-character').hide()
+  $('#get-one-character').hide()
+  $('.getOneCharacterSection').hide()
+  $('#create-character').hide()
+  $('.createCharacter').hide()
+  $('#update-character').hide()
+  $('.updateCharacter').hide()
+  $('#delete-character').hide()
   $('.textGameSection').hide()
+  $('#storySubmission').hide()
 }
 
 module.exports = {
@@ -130,5 +137,6 @@ module.exports = {
   onUpdateCharacterFailure,
   onResetState,
   onPreparation,
-  onAdventuring
+  onAdventuring,
+  onResetState2
 }

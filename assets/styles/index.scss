@@ -1,141 +1,141 @@
-@import '~bootstrap/scss/bootstrap';
-
-body {
-  background-color: #0D0D0D;
-  color: #F2F2F2;
-}
-
-div {
-  color: #F2F2F2;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  margin-left: 200px;
-}
-
-button {
-      display: flex;
-      justify-content: center;
-      background: #1b78d0;
-      text-transform: uppercase;
-      padding: .8em 1em;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-      transition: all 150ms;
-      white-space: nowrap;
-      font-weight: 600;
-      outline-color: #1b78d0;
-      width: 100%;
-      color: white;
-      margin-top: 15px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.signInSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.signUpSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.changePasswordSection {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.signOutSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.createCharacterSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.centerSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.updateCharacterSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.getCharactersSection{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.getOneCharacterSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.deleteCharacter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.success {
-  color: var(--green);
-}
-
-.failure {
-  color: var(--red);
-}
-
-.information {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-
-.buttonsSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.buttons {
-  width: 193.84px;
-}
+// @import '~bootstrap/scss/bootstrap';
+//
+// body {
+//   background-color: #0D0D0D;
+//   color: #F2F2F2;
+// }
+//
+// div {
+//   color: #F2F2F2;
+// }
+//
+// header {
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// nav {
+//   margin-left: 200px;
+// }
+//
+// button {
+//       display: flex;
+//       justify-content: center;
+//       background: #1b78d0;
+//       text-transform: uppercase;
+//       padding: .8em 1em;
+//       border: none;
+//       cursor: pointer;
+//       text-align: center;
+//       transition: all 150ms;
+//       white-space: nowrap;
+//       font-weight: 600;
+//       outline-color: #1b78d0;
+//       width: 100%;
+//       color: white;
+//       margin-top: 15px;
+// }
+//
+// form {
+//   display: flex;
+//   flex-direction: column;
+// }
+//
+// .signInSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .signUpSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .changePasswordSection {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .signOutSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+// .createCharacterSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .centerSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-bottom: 15px;
+// }
+//
+// .updateCharacterSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-bottom: 15px;
+// }
+//
+// .getCharactersSection{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .getOneCharacterSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-bottom: 15px;
+// }
+//
+// .deleteCharacter {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-bottom: 15px;
+// }
+//
+// .success {
+//   color: var(--green);
+// }
+//
+// .failure {
+//   color: var(--red);
+// }
+//
+// .information {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+//
+//
+//
+// .buttonsSection {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+//
+// .buttons {
+//   width: 193.84px;
+// }

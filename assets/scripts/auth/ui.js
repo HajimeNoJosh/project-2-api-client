@@ -17,6 +17,9 @@ const failureMessage = function (newText) {
 const onSignUpSuccess = function () {
   successMessage('Signed Up Successfully!')
   $('.password').val('')
+  $('.commandLine').show()
+  $('#sign-up').hide()
+  $('.signUp').hide()
 }
 
 const onSignUpFailure = function () {
@@ -29,12 +32,9 @@ const onSignInSuccess = function (responseData) {
   store.user = responseData.user
   $('.password').val('')
   $('#sign-in').hide()
-  $('#sign-up').hide()
   $('.signin').hide()
-  $('.signUp').hide()
-  $('.prepareForAdventure').show()
-  $('.goOnAdventure').show()
-  $('.account').show()
+  $('.commandLine2').show()
+  $('.resetState').hide()
 }
 
 const onSignInFailure = function () {
