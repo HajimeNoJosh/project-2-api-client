@@ -11,7 +11,6 @@ const changeStory = function (event) {
   event.preventDefault()
   const form = event.target
   const formData = getFormFields(form)
-  console.log(currentStoryPart)
   if (parseInt(formData.story.choice) === 1 && currentStoryPart === 'Type your choice down below. <br> 1. I understand <br> 2. I do not understand') {
     currentStoryPart = "Perched out of the crows nest of a navy vessal sits two young recruits. While bantering one spots a barrel in the seea. They quickly grab the attention of the crew on deck who draw the barrel on board. As the crew takes it downstairs to the kitchen, the two recruits notice something in the distance, the fear suddenly appearing in their eyes. 'Pirates!' they scream as an explosion hits the deck. Chaos ensues around the vessal as pirates begin to board.  Two in particular make their way downstairs and spot the barrel. Standing over it they begin to discuss what to do with it. This is when you wake up. Having just escaped a whirlpool that destroyed your tiny fishing boat you climbed into a barrel on your boat and fell asleep. The noise of two men woke you up. Would you like to... <br> 1. Pop out of the barrel and stretch your arms <br> 2. Stay instide and hope they don't look in"
     $('.currentStoryPart').html(currentStoryPart)
@@ -88,7 +87,6 @@ const changeStory = function (event) {
 }
 
 const createCharacter = function (formData) {
-  console.log(formData.character.given_name)
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/characters',
@@ -140,7 +138,6 @@ const getCharacterStoryPart = function () {
       Authorization: 'Token token=' + store.user.token
     },
     success: function (data) {
-      console.log(data)
     }
   })
 }
