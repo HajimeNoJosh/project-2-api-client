@@ -12,7 +12,6 @@ const charactersUi = require('./characters/ui.js')
 const commandLine = require('./command_line/command_line.js')
 const charactersApi = require('./characters/api.js')
 
-console.log(charactersApi)
 $(() => {
   $('#adventure').on('submit', commandLine.onGetAccount)
   $('#adventure2').on('submit', commandLine.adventureCommand)

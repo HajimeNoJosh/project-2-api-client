@@ -14,13 +14,14 @@
 
 <body>
   <h2 id="message"></h2>
+  <div class="screen">
   <section class="commandLine">
   <h1 class="pirateAdventure"> > A PIRATE ADVENTURE </h1>
   <h3 class="questionOne"> What would you like to do? </h3>
   <div class="command"> SI - sign in to your account </div>
   <div class="command"> SU - sign up for your adventure </div>
   <form id="adventure">
-    <input type="text" name="pirate[adventure]" class="clearText">
+    <input type="text" name="pirate[adventure]" class="clearText" data-ty="input" data-ty-cursor="▋">
     <button id="getPirateAdventure"></button>
   </form>
 </section>
@@ -111,12 +112,9 @@
     </form>
   </section>
   <section class='buttonsSection'>
-  <button class='prepareForAdventure buttons'>Prepare For <br>Adventure</button>
+  <!-- <button class='prepareForAdventure buttons'>Prepare For <br>Adventure</button>
   <button class='goOnAdventure buttons'>Go On Adventure</button>
-  <button class='account buttons'>Account</button>
-  <button class="resetState buttons">Go Back!</button>
-  <button class="resetState2 buttons">Go Back!</button>
-</section>
+  <button class='account buttons'>Account</button> -->
   <section class="textGameSection">
     <h4 class="welcomCharacter">
     </h4>
@@ -127,6 +125,11 @@
    > <input placeholder="Enter answer..." type="text" name="story[choice]" id="inputStory">
     <button id="submitStoryChoice">Make Choice</button>
   </form>
+  <button class="resetState buttons">Go Back!</button>
+  <button class="resetState2 buttons">Go Back!</button>
+</section>
+
+</div>
 </body>
 
 </html>
