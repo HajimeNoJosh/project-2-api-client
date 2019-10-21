@@ -13,7 +13,6 @@ const onCreate = function (event) {
 }
 
 const onGetAll = function (event) {
-  event.preventDefault()
   api.getCharacters()
     .then(ui.onGetAllSuccess)
     .catch(ui.onGetAllFailure)

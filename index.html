@@ -7,7 +7,7 @@
 
   <!-- Do not add `link` tags-->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+<link rel="stylesheet" href="https://unpkg.com/terminal.css">
   <!-- Do not add `script` tags-->
   <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
@@ -21,7 +21,7 @@
   <div class="command"> SI - sign in to your account </div>
   <div class="command"> SU - sign up for your adventure </div>
   <form id="adventure">
-    > <input type="text" name="pirate[adventure]" class="clearText">
+    <input type="text" name="pirate[adventure]" class="clearText">
     <button id="getPirateAdventure"></button>
   </form>
 </section>
@@ -32,17 +32,17 @@
 <div class="command"> SO - sign out </div>
 <div class="command"> CC - create character </div>
 <div class="command"> IC - show all characters </div>
-<div class="command"> SC - show one character </div>
-<div class="command"> DC - delte character </div>
+<div class="command"> SC - start your adventure </div>
+<div class="command"> DC - delete character </div>
 <div class="command"> UC - update your character </div>
 <form id="adventure2">
-  > <input type="text" name="pirate[adventure]" class="clearText">
+ <input type="text" name="pirate[adventure]" class="clearText">
   <button id="getPirateAdventure2"></button>
 </form>
 </section>
   <section class="continueSection">
     <section class="getOneCharacterSection">
-      <h2 class='getOneCharacter'>Get Your Character</h2>
+      <h2 class='getOneCharacter'>Start adventure with your character</h2>
       <form id="get-one-character">
         ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
         <button id="getCharacter">FETCH</button>
@@ -56,7 +56,7 @@
     <form id="create-character">
       Given Name: <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
       Family Name: <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
-      <button id="Create">Create</button>
+      <button class="btn" id="Create">Create</button>
     </form>
   </section>
   <section class="updateCharacterSection">
@@ -69,7 +69,6 @@
     </form>
   </section>
   <section class="getCharactersSection">
-    <h2 class='getCharacters'>Show All Characters</h2>
     <button id="getCharacters" class="buttons">Get Characters</button>
     <p class="allCharacters">
     <h2 id="gotCharacters">
@@ -126,7 +125,7 @@
     </p>
   </section>
   <form id="storySubmission">
-   > <input placeholder="Enter answer..." type="text" name="story[choice]">
+   > <input placeholder="Enter answer..." type="text" name="story[choice]" id="inputStory">
     <button id="submitStoryChoice">Make Choice</button>
   </form>
 </body>

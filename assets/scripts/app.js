@@ -11,7 +11,9 @@ const charactersEvents = require('./characters/events.js')
 const charactersUi = require('./characters/ui.js')
 const gamelogic = require('./game_logic/game_logic.js')
 const commandLine = require('./command_line/command_line.js')
+const charactersApi = require('./characters/api.js')
 
+console.log(charactersApi)
 $(() => {
   $('#adventure').on('submit', commandLine.onGetAccount)
   $('#adventure2').on('submit', commandLine.adventureCommand)
@@ -39,5 +41,5 @@ $(() => {
   $('.prepareForAdventure').on('click', charactersUi.onPreparation).hide()
   $('.goOnAdventure').on('click', charactersUi.onAdventuring).hide()
   $('.account').on('click', authUi.onAccountGet).hide()
-  $('#storySubmission').on('submit', gamelogic.changeStory).hide()
+  $('#storySubmission').on('submit', charactersApi.changeStory).hide()
 })

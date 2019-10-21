@@ -63,18 +63,13 @@ const onAccountGet = function () {
 }
 
 const signOutSuccess = function () {
-  location.reload()
-  $('#message').text('Signed out successfully')
-  $('#message').removeClass()
-  $('#message').addClass('success')
+  successMessage('Signed out successfully')
   $('form').trigger('reset')
   store.user = null
 }
 
 const signOutFailure = function () {
-  $('#message').text('Error on sign out')
-  $('#message').removeClass()
-  $('#message').addClass('failure')
+  failureMessage('Sign Out Failed')
 }
 
 module.exports = {
