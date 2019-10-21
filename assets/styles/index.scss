@@ -107,8 +107,63 @@ button {
   display: none;
 }
 input {
-  background-color: gray;
-  color: white;
+  background-color: transparent;
+  border: 0;
+  animation: colorPulse 5s infinite ease-in-out;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size:24px;
+  position: relative;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus::before {
+  content: ">";
+  display: block;
+  position: absolute;
+  left: -15px;
+}
+
+input[type="text"] {
+  border-bottom: 2px solid;
+}
+
+.screenWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.resetState,
+.resetState2 {
+  display: block;
+  font-family: 'Fira Mono', monospace;
+  font-size: 20px;
+  background-color: transparent;
+  border: 0;
+  animation: colorPulse 5s infinite ease-in-out;
+  border-bottom: 1px solid;
+  padding: 0;
+  position: relative;
+}
+
+.resetState:hover,
+.resetState2:hover {
+  cursor: pointer;
+}
+
+.resetState:focus,
+.resetState2:focus {
+  outline: none;
+}
+
+.resetState:focus::before,
+.resetState2:focus::before {
+  content: ">";
+  display: block;
+  position: absolute;
+  left: -15px;
 }

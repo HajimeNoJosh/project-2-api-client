@@ -65,6 +65,7 @@ const onAccountGet = function () {
 const signOutSuccess = function () {
   successMessage('Signed out successfully')
   $('form').trigger('reset')
+  $('.latestCharacter').text('')
   store.user = null
 }
 

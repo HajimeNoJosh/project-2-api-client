@@ -1,5 +1,3 @@
-const stories = require('../stories/api.js')
-
 const successMessage = function (newText) {
   $('#message').text(newText).hide(2000).show().hide(2000)
   $('#message').removeClass('failure')
@@ -15,7 +13,7 @@ const failureMessage = function (newText) {
 const onCreateSuccess = function (id) {
   successMessage('Created Successfully!')
   $('.clearText').val('')
-  stories.updateStory(id)
+  $('.latestCharacter').text('Latest character created id: ' + id.character.id).hide()
 }
 
 const onCreateFailure = function () {
@@ -70,7 +68,7 @@ const onGetOneSuccess = function (data) {
   $('#get-one-character').hide()
   $('#storySubmission').show()
   $('.currentStoryPart').html(data.character.storyPart)
-  stories.getStory(data.character.story_id)
+  $('.latestCharacter').hide()
 }
 
 const onGetOneFailure = function () {
@@ -127,6 +125,7 @@ const onResetState2 = function () {
   $('#delete-character').hide()
   $('.textGameSection').hide()
   $('#storySubmission').hide()
+  $('.latestCharacter').show()
 }
 
 module.exports = {
