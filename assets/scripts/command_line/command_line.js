@@ -52,7 +52,7 @@ const adventureCommand = function (event) {
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
-  } else if (formData.pirate.adventure.toUpperCase() === 'SC') {
+  } else if (formData.pirate.adventure.toUpperCase() === 'SA') {
     $('#get-one-character').show()
     $('#get-one-character').show()
     $('.getOneCharacterSection').show()
