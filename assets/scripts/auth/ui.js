@@ -19,6 +19,8 @@ const onSignUpSuccess = function () {
   $('.password').val('')
   $('.commandLine').show()
   $('#sign-up').hide()
+  $('#adventure input').focus()
+  $('#adventure input').val('')
   $('.signUp').hide()
 }
 
@@ -59,7 +61,6 @@ const onAccountGet = function () {
   $('#change-password').show()
   $('#change-password input:first').focus()
   $('#changePassword').show()
-
   $('#sign-out').show()
   $('.prepareForAdventure').hide()
   $('.goOnAdventure').hide()
@@ -71,6 +72,7 @@ const signOutSuccess = function () {
   successMessage('Signed out successfully')
   $('form').trigger('reset')
   $('.latestCharacter').text('')
+  $('#adventure input').focus()
   store.user = null
 }
 

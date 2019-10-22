@@ -14,6 +14,12 @@ const onCreateSuccess = function (id) {
   successMessage('Created Successfully!')
   $('.clearText').val('')
   $('.latestCharacter').text('Latest character created id: ' + id.character.id).hide()
+  $('.resetState2').hide()
+  $('.commandLine2').show()
+  $('#adventure2 input').val('').focus()
+  $('#create-character').hide()
+  $('.createCharacter').hide()
+  $('.latestCharacter').show()
 }
 
 const onCreateFailure = function () {
