@@ -1,7 +1,9 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 # Project-2-api-client
 
-[API] (https://dashboard.heroku.com/apps/fast-cliffs-16483)
+[API](https://dashboard.heroku.com/apps/fast-cliffs-16483)
+[Website](https://hajimenojosh.github.io/project-2-api-client/)
+
 This app is a choose your own adventure app where users can sign in and have access to characters that they create who each have a individual stories depending on the path they chose.
 
 I began this project with a clear idea of what my MVP product should be. I lined out my user stories alonside my wireframe and ERD. I began work on my backend to begin with. When I got it to the MVP I began to write my front end in order to test with more than my curl scripts. I added my Authorization and Character routes which I began to write forms for. When this was complete I began to work on version 2.
