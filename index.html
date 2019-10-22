@@ -20,8 +20,11 @@
         <section class="commandLine">
           <h1 class="pirateAdventure"> > A PIRATE ADVENTURE </h1>
           <h3 class="questionOne"> What would you like to do? </h3>
+          <h4 class="questionOne"> Please type your response down below </h4>
           <div class="command"> SI - sign in to your account </div>
           <div class="command"> SU - sign up for your adventure </div>
+          <br>
+          <div class="command"> Press Enter when done </div>
           <form id="adventure">
             <div class="inputWrapper">
               <input type="text" name="pirate[adventure]" class="clearText" data-ty="input" data-ty-cursor="▋">
@@ -39,6 +42,8 @@
           <div class="command"> SA - start your adventure </div>
           <div class="command"> DC - delete character </div>
           <div class="command"> UC - update your character </div>
+          <br>
+          <div class="command"> Press Enter when done </div>
           <form id="adventure2">
             <div class="inputWrapper">
               <input type="text" name="pirate[adventure]" class="clearText">
@@ -54,6 +59,7 @@
               <div class="inputWrapper">
               <input placeholder="Enter character id" type="text" name="character[id]" class="clearText">
               </div>
+                <div class="command"> Press Enter when done </div>
               <button id="getCharacter">FETCH</button>
             </form>
             <p class="oneCharacter">
@@ -72,6 +78,7 @@
               <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
             </div>
             <button class="btn" id="Create">Create</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="updateCharacterSection">
@@ -90,10 +97,12 @@
               <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
             </div>
             <button id="update">Update</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="getCharactersSection">
           <button id="getCharacters" class="buttons">Get Characters</button>
+            <div class="command"> Press Enter when done </div>
           <p class="allCharacters">
             <h2 id="gotCharacters">
             </h2>
@@ -106,6 +115,7 @@
               <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
             </div>
             <button id="deleteCharacter">Delete</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="signInSection">
@@ -120,6 +130,7 @@
               <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
             </div>
             <button id="signIn">Sign in</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="signUpSection">
@@ -138,6 +149,7 @@
               <input placeholder="Confirm password..." type="password" name="credentials[password_confirmation]" class="password">
             </div>
             <button id="signUp">Sign up</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="changePasswordSection">
@@ -152,6 +164,7 @@
               <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
             </div>
             <button id="changePassword">Change Password</button>
+              <div class="command"> Press Enter when done </div>
           </form>
         </section>
         <section class="signOutSection">

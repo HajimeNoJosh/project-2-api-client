@@ -8,17 +8,17 @@ let id = 0
 
 let currentStoryPart = ''
 
-const optionOne = 'Type your choice down below. <br> 1. I understand <br> 2. I do not understand'
+const optionOne = 'Type your choice down below. <br> 1 I understand <br> 2 I do not understand'
 
-const optionOneOne = "Perched out of the crows nest of a navy vessal sits two young recruits. While bantering one spots a barrel in the sea. They quickly grab the attention of the crew on deck who draw the barrel on board. As the crew takes it downstairs to the kitchen, the two recruits notice something else in the distance, and fear suddenly appears in their eyes. <br><br> 'Pirates!' they scream as an explosion hits the deck. <br><br> Chaos ensues around the vessal as pirates begin to board. Two pirates in particular make their way downstairs and spot the barrel. Standing over it they begin to discuss what to do with it. <br><br> This is when you wake up. Having just escaped a whirlpool that destroyed your tiny fishing boat you climbed into a barrel on your boat and fell asleep. The noise of two men woke you up. Would you like to... <br><br> 1. Pop out of the barrel and stretch your arms <br> 2. Stay inside and hope they don't look in"
+const optionOneOne = "Perched out of the crows nest of a navy vessal sits two young recruits. While bantering one spots a barrel in the sea. They quickly grab the attention of the crew on deck who draw the barrel on board. As the crew takes it downstairs to the kitchen, the two recruits notice something else in the distance, and fear suddenly appears in their eyes. <br><br> 'Pirates!' they scream as an explosion hits the deck. <br><br> Chaos ensues around the vessal as pirates begin to board. Two pirates in particular make their way downstairs and spot the barrel. Standing over it they begin to discuss what to do with it. <br><br> This is when you wake up. Having just escaped a whirlpool that destroyed your tiny fishing boat you climbed into a barrel on your boat and fell asleep. The noise of two men woke you up. Would you like to... <br><br> 1 Pop out of the barrel and stretch your arms <br> 2 Stay inside and hope they don't look in"
 
-const optionOneTwo = 'Type your choice down below. <br> 1. I understand'
+const optionOneTwo = 'Type your choice down below. <br> 1 I understand'
 
 const optionOneOneOne = "Realizing how cramped the barrel is you decide to stretch your limbs a bit. The lid pops open and out you come both arms spreading out and quite by accident knocking out the two men looming over the barrel. The two men fall to the ground making the loudest crash you've ever heard. <br><br> A voice calls from upstairs 'Koby check that out!' <br><br> You begin to hear footsteps on their way down. Would you like to.. <br><br>1 Find an escape route away from the increasingly closer steps <br>2 Wait for Koby to approach so you can ask him questions"
 
 const optionOneOneTwo = "Realizing how crazy it would be to pop out of the barrel when you don't even know who's outside, you decided to get comfy and wait it out. The two pirates outside finally agree that the barrel must be rum and decide to open it up right there. As light streams in you meekly look up and see two of the scariest faces you've ever seen. Roughly you find youself outside of the safe barrel. <br><br> The men on the right sneers 'looks like Captain Alvida has a new cabin boy' Seeing no real escape do you want to... <br><br>1 Fight back and hope you can escape <br>2 Stay calm and hope an oppurtunity arises to escape"
 
-const optionOneOneOneOne = "The footsteps sound heavy and you don't have another barrel you can use to catch Koby by suprise with. So, the next best option is to find another way out. Quickly surveying around, you spot a door and duck inside. <br><br> You find yourself surrounded by food, 'must be the kitchen store room', you think, 'can only wait here and hope.' <br><br> Through the door you barely make out a voice calling up 'Nothing down here but two of our men!' <br><br> The voice continues ' no need to come down, I'll wake them up.'<br><br> You hear water splashing and some loud grunting. <br><br> One says 'Where is the little monster...I'll kill him!' <br><br> The other replies 'He cound't have gotten far, Koby would have seen him' <br><br> Your stomch tightens and you attempt to hide between some crates of apples but accidently knock a whole crate down. <br><br> 'What was that' <br><br> 'It came from that room over there' <br><br> The door swings open and the last thing your life sees and hears are your screams and two cutlasses swinging heavy and fast. <br><br> YOU'RE DEAD"
+const optionOneOneOneOne = "The footsteps sound heavy and you don't have another barrel you can use to catch Koby by suprise with. So, the next best option is to find another way out. Quickly surveying around, you spot a door and duck inside. <br><br> You find yourself surrounded by food, 'must be the kitchen store room', you think, 'can only wait here and hope.' <br><br> Through the door you barely make out a voice calling up 'Nothing down here but two of our men!' <br><br> The voice continues ' no need to come down, I'll wake them up.'<br><br> You hear water splashing and some loud grunting. <br><br> One says 'Where is the little monster...I'll kill him!' <br><br> The other replies 'He could't have gotten far, Koby would have seen him' <br><br> Your stomch tightens and you attempt to hide between some crates of apples but accidently knock a whole crate down. <br><br> 'What was that' <br><br> 'It came from that room over there' <br><br> The door swings open and the last thing your life sees and hears are your screams and two cutlasses swinging heavy and fast. <br><br> YOU'RE DEAD"
 
 const optionOneOneOneTwo = "While waiting for Koby you take a quick survey of your surroundings. You notice you are in the kitchen and the two men who you knocked out were pirates. <br><br> The two seem to contradict one another as the kitchen seems too nice to fit the idea you of pirates. The footsteps have reached the last corner of the steps and turn your attention that way. Around the corner comes a short pink haired boy who seems terribly frightend. <br><br> He stares agape at you and looks about ready to scream. Springing into action you grasp his mouth shut and tell him you won't hurt him if he stays quite. <br><br> He nods his head while you loosen your grip and ask 'Is this a pirate ship?' <br><br> He replies 'No, this is a naval vessal being raided by Captain Alvida' <br><br> Suddenly a voice screams from upstairs 'KOBY!' <br><br> The boy wimpers and looks at you, pleading. You have a bad feeling about this. <br><br> As the two men begin to stir, you grab Koby and run to the nearest door you can find. Looking around you realize you are in the store room of the kitchen. You hear the two men exchange disgust at being knocked out and puzzlement about how much time has passed. They depart for upstairs, likely to report what happend. Would you like to... <br><br> 1 Talk to Koby <br>2 Rush to the deck"
 
@@ -73,6 +73,7 @@ const changeStory = function (event) {
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneOne) {
     currentStoryPart = optionOneOneOneOne
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneOne) {
@@ -85,6 +86,7 @@ const changeStory = function (event) {
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneOneTwo) {
     currentStoryPart = optionOneOneOneTwoTwo
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneOneTwoOne) {
@@ -97,18 +99,22 @@ const changeStory = function (event) {
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneOneTwoOneOne) {
     currentStoryPart = optionOneOneOneTwoOneOneOne
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneOneTwoOneOne) {
     currentStoryPart = optionOneOneOneTwoOneOneTwo
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneOneTwoOneTwo) {
     currentStoryPart = optionOneOneOneTwoOneTwoOne
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneOneTwoOneTwo) {
     currentStoryPart = optionOneOneOneTwoOneTwoTwo
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneTwo) {
@@ -117,14 +123,17 @@ const changeStory = function (event) {
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneTwo) {
     currentStoryPart = optionOneOneTwoTwo
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 1 && currentStoryPart === optionOneOneTwoOne) {
     currentStoryPart = optionOneOneTwoOneOne
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else if (parseInt(formData.story.choice) === 2 && currentStoryPart === optionOneOneTwoOne) {
     currentStoryPart = optionOneOneTwoOneTwo
+    $('#storySubmission').hide()
     $('.currentStoryPart').html(currentStoryPart)
     updateCharacterStoryPart(currentStoryPart)
   } else {
@@ -143,7 +152,7 @@ const createCharacter = function (formData) {
       'character': {
         'given_name': formData.character.given_name,
         'family_name': formData.character.family_name,
-        'storyPart': 'Type your choice down below. <br> 1. I understand <br> 2. I do not understand'
+        'storyPart': 'Type your choice down below. <br> 1 I understand <br> 2 I do not understand'
       }
     }
   })
