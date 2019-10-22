@@ -146,5 +146,6 @@ module.exports = {
   onResetState,
   onPreparation,
   onAdventuring,
-  onResetState2
+  onResetState2,
+  failureMessage
 }
