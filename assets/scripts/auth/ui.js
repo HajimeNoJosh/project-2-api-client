@@ -34,6 +34,7 @@ const onSignInSuccess = function (responseData) {
   $('#sign-in').hide()
   $('.signin').hide()
   $('.commandLine2').show()
+  $('#adventure2 input').focus()
   $('.resetState').hide()
 }
 
@@ -45,16 +46,20 @@ const onSignInFailure = function () {
 const onChangePasswordSuccess = function () {
   successMessage('Changed Password Successfully!')
   $('.password').val('')
+  $('#change-password input:first').focus()
 }
 
 const onChangePasswordFailure = function () {
   failureMessage('Change Password Failed')
   $('.password').val('')
+  $('#change-password input:first').focus()
 }
 
 const onAccountGet = function () {
   $('#change-password').show()
+  $('#change-password input:first').focus()
   $('#changePassword').show()
+
   $('#sign-out').show()
   $('.prepareForAdventure').hide()
   $('.goOnAdventure').hide()

@@ -23,7 +23,9 @@
           <div class="command"> SI - sign in to your account </div>
           <div class="command"> SU - sign up for your adventure </div>
           <form id="adventure">
-            <input type="text" name="pirate[adventure]" class="clearText" data-ty="input" data-ty-cursor="▋">
+            <div class="inputWrapper">
+              <input type="text" name="pirate[adventure]" class="clearText" data-ty="input" data-ty-cursor="▋">
+            </div>
             <button id="getPirateAdventure"></button>
           </form>
         </section>
@@ -38,7 +40,9 @@
           <div class="command"> DC - delete character </div>
           <div class="command"> UC - update your character </div>
           <form id="adventure2">
-            <input type="text" name="pirate[adventure]" class="clearText">
+            <div class="inputWrapper">
+              <input type="text" name="pirate[adventure]" class="clearText">
+            </div>
             <button id="getPirateAdventure2"></button>
           </form>
         </section>
@@ -46,7 +50,10 @@
           <section class="getOneCharacterSection">
             <h2 class='getOneCharacter'>Start adventure with your character</h2>
             <form id="get-one-character">
-              ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+              ID:
+              <div class="inputWrapper">
+              <input placeholder="Enter character id" type="text" name="character[id]" class="clearText">
+              </div>
               <button id="getCharacter">FETCH</button>
             </form>
             <p class="oneCharacter">
@@ -56,17 +63,32 @@
         <section class="createCharacterSection">
           <h2 class='createCharacter'>Create Character</h2>
           <form id="create-character">
-            Given Name: <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
-            Family Name: <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            Given Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
+            </div>
+            Family Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            </div>
             <button class="btn" id="Create">Create</button>
           </form>
         </section>
         <section class="updateCharacterSection">
           <h2 class='updateCharacter'>Update Character</h2>
           <form id="update-character">
-            ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
-            Given Name: <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
-            Family Name: <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            ID:
+            <div class="inputWrapper">
+              <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+            </div>
+            Given Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
+            </div>
+            Family Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            </div>
             <button id="update">Update</button>
           </form>
         </section>
@@ -79,32 +101,56 @@
         <section class="deleteCharacter">
           <form id="delete-character">
             <h2 class='getCharacters'>Delete Character</h2>
-            ID: <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+            ID:
+            <div class="inputWrapper">
+              <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+            </div>
             <button id="deleteCharacter">Delete</button>
           </form>
         </section>
         <section class="signInSection">
           <h2 class='signin'>Sign In</h2>
           <form id="sign-in">
-            Email: <input placeholder="Enter email..." type="email" name="credentials[email]">
-            Password: <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+            Email:
+            <div class="inputWrapper">
+              <input placeholder="Enter email..." type="email" name="credentials[email]">
+            </div>
+            Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+            </div>
             <button id="signIn">Sign in</button>
           </form>
         </section>
         <section class="signUpSection">
           <h2 class='signUp'>Sign Up</h2>
           <form id="sign-up">
-            Email: <input placeholder="Enter email..." type="email" name="credentials[email]">
-            Password: <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
-            Confirm Password: <input placeholder="Confirm password..." type="password" name="credentials[password_confirmation]" class="password">
+            Email:
+            <div class="inputWrapper">
+              <input placeholder="Enter email..." type="email" name="credentials[email]">
+            </div>
+            Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+            </div>
+            Confirm Password:
+            <div class="inputWrapper">
+              <input placeholder="Confirm password..." type="password" name="credentials[password_confirmation]" class="password">
+            </div>
             <button id="signUp">Sign up</button>
           </form>
         </section>
         <section class="changePasswordSection">
           <h2 id="changePassword">Change Password</h2>
           <form id="change-password">
-            Old Password: <input placeholder="Enter Old Password..." type="password" name="passwords[old]" class="password">
-            New Password: <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
+            Old Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter Old Password..." type="password" name="passwords[old]" class="password">
+            </div>
+            New Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
+            </div>
             <button id="changePassword">Change Password</button>
           </form>
         </section>
@@ -125,7 +171,9 @@
         </section>
         <section class="">
           <form id="storySubmission">
-            > <input placeholder="Enter answer..." type="text" name="story[choice]" id="inputStory">
+            <div class="inputWrapper">
+              <input placeholder="Enter answer..." type="text" name="story[choice]" id="inputStory">
+            </div>
             <button id="submitStoryChoice">Make Choice</button>
           </form>
         </section>

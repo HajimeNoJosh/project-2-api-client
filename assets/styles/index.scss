@@ -1,7 +1,8 @@
 // Credits to: https://twitter.com/chris22smith https://codemyui.com/fallout-pip-boy-screen-in-css-and-html/
 
-body {
+html, body {
   background-color:#000;
+  font-family: 'Fira Mono', monospace !important;
   margin:0;
   overflow:hidden;
   padding:0;
@@ -13,7 +14,10 @@ body {
 .success {
   color: green;
 }
-
+.content {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
 .screen {
   display: flex;
   justify-content: center;
@@ -21,7 +25,6 @@ body {
   background-image:radial-gradient(#444, #111);
   box-shadow:0 0 5vmin 1vmin #000 inset;
   box-sizing:border-box;
-  font-family:'Fira Mono', monospace;
   font-size:20px;
   height:100vh;
   overflow:hidden;
@@ -92,10 +95,6 @@ body {
     opacity:0;
   }
 }
-input[type=text] {
-  border: none;
-  border-bottom: 2px solid black;
-}
 
 form {
   display: flex;
@@ -107,13 +106,13 @@ button {
   display: none;
 }
 input {
+  font-family:'Fira Mono', monospace;
   background-color: transparent;
   border: 0;
   animation: colorPulse 5s infinite ease-in-out;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size:24px;
+  font-size:20px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 input:focus {
@@ -128,7 +127,26 @@ input:focus::before {
 }
 
 input[type="text"] {
-  border-bottom: 2px solid;
+  border-bottom: transparent;
+  width: 100%;
+}
+
+form {
+  padding-top: 30px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.inputWrapper::before {
+  content: ">";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .screenWrapper {
@@ -140,14 +158,15 @@ input[type="text"] {
 .resetState,
 .resetState2 {
   display: block;
-  font-family: 'Fira Mono', monospace;
   font-size: 20px;
+  font-family:'Fira Mono', monospace;
   background-color: transparent;
   border: 0;
   animation: colorPulse 5s infinite ease-in-out;
   border-bottom: 1px solid;
   padding: 0;
   position: relative;
+  margin-top: 20px;
 }
 
 .resetState:hover,
@@ -166,4 +185,19 @@ input[type="text"] {
   display: block;
   position: absolute;
   left: -15px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  animation: colorPulse 5s infinite ease-in-out;
+    font-family:'Fira Mono', monospace;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  animation: colorPulse 5s infinite ease-in-out;
+    font-family:'Fira Mono', monospace;
+}
+
+::placeholder {
+  animation: colorPulse 5s infinite ease-in-out;
+    font-family:'Fira Mono', monospace;
 }

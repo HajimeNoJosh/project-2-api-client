@@ -67,6 +67,7 @@ const onGetOneSuccess = function (data) {
   $('.getOneCharacterSection').hide()
   $('#get-one-character').hide()
   $('#storySubmission').show()
+  $('#storySubmission input:first').focus()
   $('.currentStoryPart').html(data.character.storyPart)
   $('.latestCharacter').hide()
 }
@@ -92,6 +93,7 @@ const onAdventuring = function () {
   $('.getOneCharacterSection').show()
   $('#getCharacters').show()
   $('#get-one-character').show()
+  $('#get-one-character input:first').val('hello')
   $('.resetState').show()
   $('.prepareForAdventure').hide()
   $('.goOnAdventure').hide()
@@ -104,10 +106,12 @@ const onResetState = function () {
   $('.commandLine').show()
   $('#sign-in').hide()
   $('.signin').hide()
+  $('#adventure input').val('').focus()
 }
 const onResetState2 = function () {
   $('.resetState2').hide()
   $('.commandLine2').show()
+  $('#adventure2 input').val('').focus()
   $('#change-password').hide()
   $('#changePassword').hide()
   $('#sign-out').hide()

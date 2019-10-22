@@ -13,9 +13,11 @@ const onGetAccount = function (event) {
     $('.signin').show()
     $('.commandLine').hide()
     $('.resetState').show()
+    $('#sign-in input:first').focus()
   } else if (formData.pirate.adventure.toUpperCase() === 'SU') {
     $('.signUp').show()
     $('#sign-up').show()
+    $('#sign-up input:first').focus()
     $('.commandLine').hide()
     $('.resetState').show()
   }
@@ -30,6 +32,7 @@ const adventureCommand = function (event) {
   if (formData.pirate.adventure.toUpperCase() === 'CP') {
     $('#change-password').show()
     $('#changePassword').show()
+    $('#change-password input:first').focus()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
@@ -43,6 +46,7 @@ const adventureCommand = function (event) {
   } else if (formData.pirate.adventure.toUpperCase() === 'CC') {
     $('#create-character').show()
     $('.createCharacter').show()
+    $('#create-character input:first').focus()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
@@ -54,25 +58,28 @@ const adventureCommand = function (event) {
     $('.resetState2').show()
   } else if (formData.pirate.adventure.toUpperCase() === 'SA') {
     $('#get-one-character').show()
-    $('#get-one-character').show()
     $('.getOneCharacterSection').show()
+    $('#get-one-character input:first').focus()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
   } else if (formData.pirate.adventure.toUpperCase() === 'CC') {
     $('#create-character').show()
     $('.createCharacter').show()
+    $('#create-character input:first').focus()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
   } else if (formData.pirate.adventure.toUpperCase() === 'UC') {
     $('#update-character').show()
+    $('#update-character input:first').focus()
     $('.updateCharacter').show()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()
   } else if (formData.pirate.adventure.toUpperCase() === 'DC') {
     $('#delete-character').show()
+    $('#delete-character input:first').focus()
     $('.commandLine2').hide()
     $('.resetState').hide()
     $('.resetState2').show()

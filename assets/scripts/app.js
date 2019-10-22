@@ -39,4 +39,5 @@ $(() => {
   $('.goOnAdventure').on('click', charactersUi.onAdventuring).hide()
   $('.account').on('click', authUi.onAccountGet).hide()
   $('#storySubmission').on('submit', charactersApi.changeStory).hide()
+  $('#adventure input').focus()
 })
