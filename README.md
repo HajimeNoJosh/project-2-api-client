@@ -1,5 +1,7 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+
 # Project-2-api-client
+![Website](assets/photos/Image 10-23-19 at 7.15 PM (1).jpg)
+
 
 [API](https://fast-cliffs-16483.herokuapp.com/)
 
