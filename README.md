@@ -2,7 +2,10 @@
 # Project-2-api-client
 
 [API](https://dashboard.heroku.com/apps/fast-cliffs-16483)
+
 [Website](https://hajimenojosh.github.io/project-2-api-client/)
+
+[API Github](https://github.com/HajimeNoJosh/project-2-api)
 
 This app is a choose your own adventure app where users can sign in and have access to characters that they create who each have a individual stories depending on the path they chose.
 
