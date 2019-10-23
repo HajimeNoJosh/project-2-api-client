@@ -3,7 +3,8 @@ const store = require('../store.js')
 const getFormFields = require('../../../lib/get-form-fields.js')
 const characterUi = require('./ui.js')
 // const gameLogic = require('../game_logic/game_logic.js')
-
+// .then() second one
+// check points
 let id = 0
 
 let currentStoryPart = ''
