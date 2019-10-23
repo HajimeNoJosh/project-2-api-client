@@ -1,6 +1,6 @@
 
 # Project-2-api-client
-![Website](assets/photos/Image 10-23-19 at 7.15 PM (1).jpg)
+![Website](https://github.com/HajimeNoJosh/project-2-api-client/blob/master/assets/photos/Image%2010-23-19%20at%207.15%20PM%20(1).jpg)
 
 
 [API](https://fast-cliffs-16483.herokuapp.com/)
