@@ -18,6 +18,13 @@ html, body {
   max-height: 80vh;
   overflow-y: scroll;
 }
+
+.textalign {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
 .screen {
   display: flex;
   justify-content: center;

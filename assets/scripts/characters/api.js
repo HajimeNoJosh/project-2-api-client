@@ -242,5 +242,6 @@ module.exports = {
   updateCharacter,
   updateCharacterStoryPart,
   getCharacterStoryPart,
-  changeStory
+  changeStory,
+  optionOne
 }
