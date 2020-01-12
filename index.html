@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A One Piece Choose Your Own Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h2 id="message"></h2>
+  <div class="screen">
+    <div class="screenWrapper">
+      <div class="content">
+        <section class="commandLine">
+          <h1 class="pirateAdventure"> > A PIRATE ADVENTURE </h1>
+          <h3>Sign up with a throw away account </h3>
+          <h3 class="questionOne"> What would you like to do? </h3>
+          <h4 class="questionOne"> Please type your response down below </h4>
+          <div class="command"> SI - sign in to your account </div>
+          <div class="command"> SU - sign up for your adventure </div>
+          <br>
+          <div class="command"> Press Enter when done </div>
+          <br>
+
+          <form id="adventure">
+            <div class="inputWrapper">
+              <input type="text" name="pirate[adventure]" class="clearText" data-ty="input" data-ty-cursor="▋">
+            </div>
+            <button id="getPirateAdventure"></button>
+          </form>
+        </section>
+        <section class="commandLine2">
+          <h1 class="pirateAdventures"> > A PIRATE ADVENTURE </h1>
+          <h3 class="questionTwo"> What would you like to do? </h3>
+          <div class="command"> CP - change password </div>
+          <div class="command"> SO - sign out </div>
+          <div class="command"> CC - create character </div>
+          <div class="command"> IC - show all characters </div>
+          <div class="command"> SA - start your adventure </div>
+          <div class="command"> DC - delete character </div>
+          <div class="command"> UC - update your character </div>
+          <br>
+          <div class="enterCommand"> Press Enter when done </div>
+          <form id="adventure2">
+            <div class="inputWrapper">
+              <input type="text" name="pirate[adventure]" class="clearText">
+            </div>
+            <button id="getPirateAdventure2"></button>
+          </form>
+        </section>
+        <section class="continueSection">
+          <section class="getOneCharacterSection">
+            <h2 class='getOneCharacter'>Start adventure with your character</h2>
+            <form id="get-one-character">
+              ID:
+              <div class="inputWrapper">
+                <input placeholder="Enter character id" type="text" name="character[id]" class="clearText">
+              </div>
+              <div class="command"> Press Enter when done </div>
+              <button id="getCharacter">FETCH</button>
+            </form>
+            <p class="oneCharacter">
+          </section>
+        </section>
+        <!-- <button class="continueButton"> YES </button> -->
+        <section class="createCharacterSection">
+          <h2 class='createCharacter'>Create Character</h2>
+          <form id="create-character">
+            Given Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
+            </div>
+            Family Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            </div>
+            <button class="btn" id="Create">Create</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="updateCharacterSection">
+          <h2 class='updateCharacter'>Update Character</h2>
+          <form id="update-character">
+            ID:
+            <div class="inputWrapper">
+              <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+            </div>
+            Given Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Given Name" type="text" name="character[given_name]" class="clearText">
+            </div>
+            Family Name:
+            <div class="inputWrapper">
+              <input placeholder="Enter Family Name..." type="text" name="character[family_name]" class="clearText">
+            </div>
+            <button id="update">Update</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="getCharactersSection">
+          <button id="getCharacters" class="buttons">Get Characters</button>
+          <p class="allCharacters">
+            <h2 id="gotCharacters">
+            </h2>
+        </section>
+        <section class="deleteCharacter">
+          <form id="delete-character">
+            <h2 class='getCharacters'>Delete Character</h2>
+            ID:
+            <div class="inputWrapper">
+              <input placeholder="Enter Character ID" type="text" name="character[id]" class="clearText">
+            </div>
+            <button id="deleteCharacter">Delete</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="signInSection">
+          <h2 class='signin'>Sign In</h2>
+          <form id="sign-in">
+            Email:
+            <div class="inputWrapper">
+              <input placeholder="Enter email..." type="email" name="credentials[email]" required>
+            </div>
+            Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter password..." type="password" name="credentials[password]" class="password" required>
+            </div>
+            <button id="signIn">Sign in</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="signUpSection">
+          <h2 class='signUp'>Sign Up</h2>
+          <form id="sign-up">
+            Email:
+            <div class="inputWrapper">
+              <input placeholder="Enter email..." type="email" name="credentials[email]">
+            </div>
+            Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter password..." type="password" name="credentials[password]" class="password">
+            </div>
+            Confirm Password:
+            <div class="inputWrapper">
+              <input placeholder="Confirm password..." type="password" name="credentials[password_confirmation]" class="password">
+            </div>
+            <button id="signUp">Sign up</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="changePasswordSection">
+          <h2 id="changePassword">Change Password</h2>
+          <form id="change-password">
+            Old Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter Old Password..." type="password" name="passwords[old]" class="password">
+            </div>
+            New Password:
+            <div class="inputWrapper">
+              <input placeholder="Enter New Password..." type="password" name="passwords[new]" class="password">
+            </div>
+            <button id="changePassword">Change Password</button>
+            <div class="command"> Press Enter when done </div>
+          </form>
+        </section>
+        <section class="signOutSection">
+          <form id="sign-out">
+            <button id="signout">Sign Out</button>
+          </form>
+        </section>
+        <!-- <section class='buttonsSection'> -->
+        <!-- <button class='prepareForAdventure buttons'>Prepare For <br>Adventure</button>
+      <button class='goOnAdventure buttons'>Go On Adventure</button>
+      <button class='account buttons'>Account</button> -->
+        <section class="textGameSection">
+          <h4 class="welcomCharacter">
+          </h4>
+          <p class='currentStoryPart'>
+          </p>
+        </section>
+        <section class="">
+          <form id="storySubmission">
+            <div class="inputWrapper">
+              <input placeholder="Enter answer..." type="text" name="story[choice]" id="inputStory">
+            </div>
+            <button id="submitStoryChoice">Make Choice</button>
+          </form>
+        </section>
+      </div>
+      <div class="latestCharacter">
+      </div>
+      <div class="buttonContent">
+        <button class="resetState buttons">Go Back!</button>
+        <button class="resetState2 buttons">Go Back!</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
